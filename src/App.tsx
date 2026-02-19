@@ -5,7 +5,7 @@ function App(): React.JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                Hello World, Liam Bast UD CISC275 with React Hooks and
+                Hello World! Liam Bast UD CISC275 with React Hooks and
                 TypeScript
             </header>
             <p>
