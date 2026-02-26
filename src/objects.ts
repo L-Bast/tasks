@@ -45,10 +45,7 @@ export function isValid(question: Question, answer: string): boolean {
     if (question.type === "short_answer_question") {
         return true;
     }
-    if (question.type === "multiple_choice_question") {
-        return question.options.includes(answer);
-    }
-    return false;
+    return question.options.includes(answer);
 }
 
 /**
@@ -140,7 +137,7 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
  */
 export function addOption(question: Question, newOption: string): Question {
     let temp: Question = { ...question };
-    temp.options = JSON.parse(JSON.stringify(temp.options));
+    temp.options = [...question.options];
     temp.options.push(newOption);
     return temp;
 }
