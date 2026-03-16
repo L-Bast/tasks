@@ -12,6 +12,7 @@ import { ShoveBox } from "./bad-components/ShoveBox";
 import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 function App(): React.JSX.Element {
+    DoubleHalf;
     return (
         <div className="App">
             <header className="App-header">
